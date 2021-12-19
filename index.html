@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blanchard</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+    integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-content">
+          <button class="header__btn-open"><svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+            <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
+          </svg>
+          </button>
+          <a class="logo header-logo" aria-label="логотип" href="#">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <nav class="header__nav">
+            <button class="nav__close"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white" />
+              <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+            </svg>
+            </button>
+            <ul id="#" class="nav-list bg-focus">
+              <li class="nav-list__item "><a class="nav-list__link bg-focus" href="#">О&nbsp;нас</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Галерея</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Каталог</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">События</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Издания</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Проекты</a></li>
+              <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Контакты</a></li>
+            </ul>
+            <a aria-label="войти" class="header-link bg-focus-login">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                  fill="white" />
+              </svg>Войти
+            </a>
+          </nav>
+          <div class="form-container">
+            <button class="form-btn__open"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <input aria-label="найти" class="form__input form-none" type="text" placeholder="Поиск по сайту">
+            <form action="/" class="form">
+              <button class="form-btn__submit"><svg width="24" height="24" viewBox="0 0 30 29" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"
+                    fill="grey" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                    fill="grey" />
+                </svg>
+              </button>
+              <input aria-label="найти" class="form__input" type="text">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-hero">
+      <div class="swiper swiper-hero">
+        <div class="swiper-wrapper swiper-wrapper-hero">
+          <div class="swiper-slide swiper-slide-hero"></div>
+          <div class="swiper-slide swiper-slide-hero"></div>
+          <div class="swiper-slide swiper-slide-hero"></div>
+        </div>
+      </div>
+      <div class="header-hero__top">
+        <div class="container search">
+          <ul class="list">
+            <li class="list__item">
+              <button class="list__item__btn bg-focus-btn">Реализм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" stroke="white" />
+                </svg>
+              </button>
+              <div class="dropdown-box simplebar-container">
+                <ul class="dropdown-box__list simplebar">
+                  <li class="dropdown-box__list__item simplebar__item">Тинторетто</li>
+                  <li class="dropdown-box__list__item simplebar__item">Фридрих</li>
+                  <li class="dropdown-box__list__item simplebar__item">Леонардо</li>
+                  <li class="dropdown-box__list__item simplebar__item">Верроккьо</li>
+                  <li class="dropdown-box__list__item simplebar__item">Тинторетто</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__item__btn bg-focus-btn">Импрессионизм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" stroke="white" />
+                </svg>
+              </button>
+              <div class="dropdown-box simplebar-container">
+                <ul class="dropdown-box__list simplebar">
+                  <li class="dropdown-box__list__item simplebar__item">Моне</li>
+                  <li class="dropdown-box__list__item simplebar__item">Сислей</li>
+                  <li class="dropdown-box__list__item simplebar__item">Мане</li>
+                  <li class="dropdown-box__list__item simplebar__item">Ренуар</li>
+                  <li class="dropdown-box__list__item simplebar__item">Моне</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__item__btn bg-focus-btn">Постимпрессионизм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" stroke="white" />
+                </svg>
+              </button>
+              <div class="dropdown-box simplebar-container">
+                <ul class="dropdown-box__list simplebar">
+                  <li class="dropdown-box__list__item simplebar__item">Ван Гог</li>
+                  <li class="dropdown-box__list__item simplebar__item">Сезанн</li>
+                  <li class="dropdown-box__list__item simplebar__item">Гоген</li>
+                  <li class="dropdown-box__list__item simplebar__item">Сёра</li>
+                  <li class="dropdown-box__list__item simplebar__item">Ван Гог</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__item__btn bg-focus-btn">Авангард
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" stroke="white" />
+                </svg>
+              </button>
+              <div class="dropdown-box simplebar-container">
+                <ul class="dropdown-box__list simplebar">
+                  <li class="dropdown-box__list__item simplebar__item">Кандинский</li>
+                  <li class="dropdown-box__list__item simplebar__item">Маринетти</li>
+                  <li class="dropdown-box__list__item simplebar__item">Малевич</li>
+                  <li class="dropdown-box__list__item simplebar__item">Пикассо</li>
+                  <li class="dropdown-box__list__item simplebar__item">Кандинский</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__item__btn bg-focus-btn">Футуризм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" stroke="white" />
+                </svg>
+              </button>
+              <div class="dropdown-box simplebar-container">
+                <ul class="dropdown-box__list simplebar">
+                  <li class="dropdown-box__list__item simplebar__item">Карра</li>
+                  <li class="dropdown-box__list__item simplebar__item">Прателла</li>
+                  <li class="dropdown-box__list__item simplebar__item">Северини</li>
+                  <li class="dropdown-box__list__item simplebar__item">Балла</li>
+                  <li class="dropdown-box__list__item simplebar__item">Карра</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="form-container-hero">
+            <button class="form-btn__open"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <input aria-label="найти" class="form__input form-none" type="text" placeholder="Поиск по сайту">
+          </div>
+        </div>
+      </div>
+      <div class="header-hero__descr">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="header-hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
+            <p class="header-hero__text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных
+              плановых заданий
+              создаёт предпосылки для новых
+              предложений.</p>
+            <button class="header-hero__btn outline-focus">Подписаться на&nbsp;рассылку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <div class="about__content">
+        <h2 class="about__title title">О&nbsp;нас</h2>
+        <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как
+        способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует,
+        однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения
+        и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований
+        создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом
+        комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия
+        представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть
+        разоблачены.</p>
+      </div>
+    </div>
+  </section>
+  <section class="swiper-section">
+    <div class="container swiper-box">
+      <div class="swiper-left__content">
+        <h2 class="gallery-title title">Галерея</h2>
+        <div class="container__select">
+          <p>Фильтр:</p>
+          <select class="select__box" name="select">
+            <option value="Живопись" selected>Живопись</option>
+            <option>Рисунок</option>
+            <option>Скульптура</option>
+          </select>
+        </div>
+        <p class="swiper-left__content_text">Вам предоставляется 10&nbsp;бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо
+        воспользуйтесь лицензией.</p>
+      </div>
+      <div class="swiper swiper-right--content">
+        <div class="swiper-right-btns">
+          <button class="sw-btn swiper-btn--prev"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+              fill="#666666" />
+            <path
+              d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+              stroke="black" />
+            <path d="M16 20L11 15L16 10" stroke="white" />
+          </svg></button>
+          <div class="swiper-pagination--right"></div>
+          <button class="sw-btn swiper-btn--next"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+              fill="#666666" />
+            <path
+              d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+              stroke="black" />
+            <path d="M14 20L19 15L14 10" stroke="white" />
+          </svg></button>
+        </div>
+        <div class="swiper-wrapper swiper-wrapper__box">
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-1.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-2.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-3.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-4.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-5.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-6.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-7.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-8.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-9.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-10.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-11.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-12.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-13.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-14.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-15.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-16.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-17.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-18.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-19.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-20.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-21.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-22.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-23.jpg" alt="изображение">
+            </picture>
+          </div>
+          <div class="swiper-slide swiper-slide__item">
+            <picture>
+              <img class="swiper-slide--img"
+                src="images/swiper-gallery-img-24.jpg" alt="изображение">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/form_search.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+    integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new SimpleBar(document.querySelector(".simplebar"), {
+      /* чтобы изначально ползунок был виден */
+      autoHide: false,
+      /* с помощью этого значения вы можете управлять высотой ползунка*/
+      scrollbarMaxSize: 25,
+    });
+    document.querySelectorAll('.simplebar').forEach(el => {
+      new SimpleBar(el)
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-hero.js"></script>
+  <script src="js/swiper-gallery.js"></script>
+  
+  <script>
+    const element = document.querySelector('.select__box');
+    const choices = new Choices(element, {
+      searchEnabled: false,
+      shouldSort: false,
+      placeholder: false,
+      itemSelectText: ''
+    });
+  </script>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>
