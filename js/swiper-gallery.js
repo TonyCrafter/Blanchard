@@ -17,6 +17,7 @@ let gallerySlider = new Swiper(".swiper-right--content", {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       grid: {
         rows: 1
       },
@@ -24,6 +25,7 @@ let gallerySlider = new Swiper(".swiper-right--content", {
     },
     576: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       grid: {
         rows: 2
       },
@@ -32,6 +34,7 @@ let gallerySlider = new Swiper(".swiper-right--content", {
 
     1200: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       grid: {
         rows: 2
       },
