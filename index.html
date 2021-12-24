@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blanchard</title>
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
@@ -419,14 +420,13 @@
     integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    new SimpleBar(document.querySelector(".simplebar"), {
-      /* чтобы изначально ползунок был виден */
-      autoHide: false,
-      /* с помощью этого значения вы можете управлять высотой ползунка*/
-      scrollbarMaxSize: 25,
-    });
     document.querySelectorAll('.simplebar').forEach(el => {
-      new SimpleBar(el)
+      new SimpleBar(el, {
+        /* чтобы изначально ползунок был виден */
+        autoHide: false,
+        /* с помощью этого значения вы можете управлять высотой ползунка*/
+        scrollbarMaxSize: 25,
+      })
     });
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
