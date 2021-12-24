@@ -233,6 +233,8 @@ button {
 }
 
 .header-hero__top {
+  position: relative;
+  z-index: 10;
   margin-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -773,6 +775,36 @@ button {
   cursor: pointer;
 }
 
+.swiper-btn--next svg:focus {
+  outline: 2px solid #000;
+  border-radius: 50%;
+}
+
+.swiper-btn--next svg:hover {
+  fill: #9D5CD0;
+}
+
+.swiper-btn--next svg:active {
+  fill: #7943A4;
+  outline: 2px solid #000;
+  border-radius: 50%;
+}
+
+.swiper-btn--prev svg:focus {
+  outline: 2px solid #000;
+  border-radius: 50%;
+}
+
+.swiper-btn--prev svg:hover {
+  fill: #9D5CD0;
+}
+
+.swiper-btn--prev svg:active {
+  fill: #7943A4;
+  outline: 2px solid #000;
+  border-radius: 50%;
+}
+
 .swiper-section .swiper-slide__item {
   position: relative;
   cursor: pointer;
@@ -787,7 +819,7 @@ button {
   right: 20px;
   left: 20px;
   background-color: rgba(0,0,0,0.5);
-  background-image: url("https://icon-library.com/images/57784.svg.svg");
+  background-image: url(../images/loupe-affect.svg);
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
@@ -795,6 +827,10 @@ button {
   opacity: 0;
   transition-property: z-index, opacity;
   transition: .3s ease-in-out;
+}
+
+.swiper-slide__item:active {
+  color: rgba(194, 131, 243, 0.4);
 }
 
 .swiper-slide__item:hover:before {
@@ -812,6 +848,7 @@ button {
 .sw-btn {
   background-color: transparent;
   border: none;
+  padding: 2px;
 }
 
 .swiper-pagination--right {
