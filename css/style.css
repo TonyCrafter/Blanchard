@@ -150,8 +150,6 @@ button {
   position: absolute;
   top: -4px;
   bottom: -6px;
-  left: -6px;
-  right: -6px;
   background-color: var(--color-focus-header);
   z-index: -1;
   opacity: 0;
@@ -760,46 +758,46 @@ button {
   top: 40%;
 }
 
-.swiper-right--content {
+.swiper-right__content {
   max-width: 1200px;
   width: 100%;
   overflow: hidden;
 }
 
-.swiper-right--content .swiper-wrapper__box {
+.swiper-right__content .swiper-wrapper__box {
   height: 750px;
 }
 
-.swiper-btn--prev, .swiper-btn--next {
+.swiper-btn__prev, .swiper-btn__next {
   background-color: transparent;
   cursor: pointer;
 }
 
-.swiper-btn--next svg:focus {
+.swiper-btn__next svg:focus {
   outline: 2px solid #000;
   border-radius: 50%;
 }
 
-.swiper-btn--next svg:hover {
+.swiper-btn__next svg:hover {
   fill: #9D5CD0;
 }
 
-.swiper-btn--next svg:active {
+.swiper-btn__next svg:active {
   fill: #7943A4;
   outline: 2px solid #000;
   border-radius: 50%;
 }
 
-.swiper-btn--prev svg:focus {
+.swiper-btn__prev svg:focus {
   outline: 2px solid #000;
   border-radius: 50%;
 }
 
-.swiper-btn--prev svg:hover {
+.swiper-btn__prev svg:hover {
   fill: #9D5CD0;
 }
 
-.swiper-btn--prev svg:active {
+.swiper-btn__prev svg:active {
   fill: #7943A4;
   outline: 2px solid #000;
   border-radius: 50%;
@@ -851,7 +849,7 @@ button {
   padding: 2px;
 }
 
-.swiper-pagination--right {
+.swiper-pagination__right {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -861,11 +859,11 @@ button {
   text-align: center;
 }
 
-.swiper-btn--prev {
+.swiper-btn__prev {
   margin-right: 20px;
 }
 
-.swiper-pagination--right {
+.swiper-pagination__right {
   margin-right: 20px;
 }
 
@@ -878,7 +876,7 @@ button {
   cursor: not-allowed;
 }
 
-.swiper-slide--img {
+.swiper-slide__img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -1082,7 +1080,7 @@ button {
   .container__select {
     width: 100%;
   }
-  .swiper-right--content .swiper-wrapper__box {
+  .swiper-right__content .swiper-wrapper__box {
     height: 100%;
   }
 }
@@ -1091,18 +1089,18 @@ button {
   .swiper-section .swiper-box {
     flex-direction: column;
   }
-  .swiper-right--content {
+  .swiper-right__content {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .swiper-right--content {
+  .swiper-right__content {
     height: auto;
     display: flex;
     flex-direction: column;
   }
-  .swiper-right--content .swiper-wrapper__box {
+  .swiper-right__content .swiper-wrapper__box {
     order: 1;
     margin-bottom: 40px;
   }
@@ -1111,7 +1109,7 @@ button {
     margin-bottom: 0;
     align-self: center;
   }
-  .swiper-left--content {
+  .swiper-left__content {
     margin-bottom: 40px;
   }
 }
