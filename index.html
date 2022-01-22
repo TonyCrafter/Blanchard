@@ -13,6 +13,7 @@
     integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -28,7 +29,7 @@
             <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
           </svg>
           </button>
-          <picture class="logo header-logo" aria-label="логотип Blanchard">
+          <picture class="header-logo" aria-label="логотип Blanchard">
             <source srcset="images/logo.svg" media="(min-width: 550px)">
             <img src="images/logo-mobile.svg" alt="logo">
           </picture>
@@ -48,13 +49,11 @@
               <li class="nav-list__item"><a class="nav-list__link bg-focus" href="#">Контакты</a></li>
             </ul>
             <button class="header-link bg-focus-login">
-              <a>
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                     fill="white" />
-                </svg>Войти
-              </a>
+              </svg>Войти
             </button>
           </nav>
           <div class="form-container">
@@ -79,6 +78,16 @@
                 </svg>
               </button>
               <input aria-label="найти" class="form__input" type="text">
+              <button class="form-btn__close">
+                <svg width="23" height="23" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)"
+                      fill="white" />
+                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)"
+                      fill="white" />
+                  </g>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
@@ -103,11 +112,11 @@
               </button>
               <div class="dropdown-box simplebar-container">
                 <ul class="dropdown-box__list simplebar">
-                  <li class="dropdown-box__list__item simplebar__item">Тинторетто</li>
-                  <li class="dropdown-box__list__item simplebar__item">Фридрих</li>
-                  <li class="dropdown-box__list__item simplebar__item">Леонардо</li>
-                  <li class="dropdown-box__list__item simplebar__item">Верроккьо</li>
-                  <li class="dropdown-box__list__item simplebar__item">Тинторетто</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg1">Тинторетто</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg1">Фридрих</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg1">Леонардо</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg1">Верроккьо</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg1">Тинторетто</li>
                 </ul>
               </div>
             </li>
@@ -119,11 +128,11 @@
               </button>
               <div class="dropdown-box simplebar-container">
                 <ul class="dropdown-box__list simplebar">
-                  <li class="dropdown-box__list__item simplebar__item">Моне</li>
-                  <li class="dropdown-box__list__item simplebar__item">Сислей</li>
-                  <li class="dropdown-box__list__item simplebar__item">Мане</li>
-                  <li class="dropdown-box__list__item simplebar__item">Ренуар</li>
-                  <li class="dropdown-box__list__item simplebar__item">Моне</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg2">Моне</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg2">Сислей</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg2">Мане</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg2">Ренуар</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg2">Моне</li>
                 </ul>
               </div>
             </li>
@@ -135,11 +144,11 @@
               </button>
               <div class="dropdown-box simplebar-container">
                 <ul class="dropdown-box__list simplebar">
-                  <li class="dropdown-box__list__item simplebar__item">Ван Гог</li>
-                  <li class="dropdown-box__list__item simplebar__item">Сезанн</li>
-                  <li class="dropdown-box__list__item simplebar__item">Гоген</li>
-                  <li class="dropdown-box__list__item simplebar__item">Сёра</li>
-                  <li class="dropdown-box__list__item simplebar__item">Ван Гог</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg3">Ван Гог</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg3">Сезанн</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg3">Гоген</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg3">Сёра</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg3">Ван Гог</li>
                 </ul>
               </div>
             </li>
@@ -151,11 +160,11 @@
               </button>
               <div class="dropdown-box simplebar-container">
                 <ul class="dropdown-box__list simplebar">
-                  <li class="dropdown-box__list__item simplebar__item">Кандинский</li>
-                  <li class="dropdown-box__list__item simplebar__item">Маринетти</li>
-                  <li class="dropdown-box__list__item simplebar__item">Малевич</li>
-                  <li class="dropdown-box__list__item simplebar__item">Пикассо</li>
-                  <li class="dropdown-box__list__item simplebar__item">Кандинский</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg4">Кандинский</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg4">Маринетти</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg4">Малевич</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg4">Пикассо</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg4">Кандинский</li>
                 </ul>
               </div>
             </li>
@@ -167,11 +176,11 @@
               </button>
               <div class="dropdown-box simplebar-container">
                 <ul class="dropdown-box__list simplebar">
-                  <li class="dropdown-box__list__item simplebar__item">Карра</li>
-                  <li class="dropdown-box__list__item simplebar__item">Прателла</li>
-                  <li class="dropdown-box__list__item simplebar__item">Северини</li>
-                  <li class="dropdown-box__list__item simplebar__item">Балла</li>
-                  <li class="dropdown-box__list__item simplebar__item">Карра</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg5">Карра</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg5">Прателла</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg5">Северини</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg5">Балла</li>
+                  <li class="dropdown-box__list__item simplebar__item item-bg5">Карра</li>
                 </ul>
               </div>
             </li>
@@ -204,6 +213,7 @@
       </div>
     </div>
   </header>
+
   <section class="about">
     <div class="container">
       <div class="about__content">
@@ -234,9 +244,9 @@
         <p class="swiper-left__content-text">Вам предоставляется 10&nbsp;бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо
         воспользуйтесь лицензией.</p>
       </div>
-      <div class="swiper swiper-right--content">
+      <div class="swiper swiper-right__content">
         <div class="swiper-right-btns">
-          <button class="sw-btn swiper-btn--prev"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="sw-btn swiper-btn__prev"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
               fill="#666666" />
@@ -245,8 +255,8 @@
               stroke="black" />
             <path d="M16 20L11 15L16 10" stroke="white" />
           </svg></button>
-          <div class="swiper-pagination--right"></div>
-          <button class="sw-btn swiper-btn--next"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="swiper-pagination__right"></div>
+          <button class="sw-btn swiper-btn__next"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
               fill="#666666" />
@@ -257,147 +267,161 @@
           </svg></button>
         </div>
         <div class="swiper-wrapper swiper-wrapper__box">
-          <div class="swiper-slide swiper-slide__item">
+          <a class="swiper-slide swiper-slide__item" data-fancybox href="#hidden">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-1.jpg" alt="изображение">
             </picture>
+          </a>
+          <div class="popap" style="display: none; width: 500px;" id="hidden">
+            <img src="images/swiper-gallery-img-1.jpg">
+            <div class="popap-text">
+              <h2>Контент из скрытого div</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+                vulputate eros.
+              </p>
+              <p>
+                Donec hendrerit efficitur ex vitae euismod. Maecenas ut leo vitae ipsum dictum
+                cursus vel vitae nulla.
+              </p>
+            </div>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-2.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-3.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-4.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-5.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-6.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-7.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-8.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-9.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-10.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-11.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-12.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-13.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-14.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-15.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-16.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-17.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-18.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-19.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-20.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-21.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-22.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-23.jpg" alt="изображение">
             </picture>
           </div>
           <div class="swiper-slide swiper-slide__item">
             <picture>
-              <img class="swiper-slide--img"
+              <img class="swiper-slide__img"
                 src="images/swiper-gallery-img-24.jpg" alt="изображение">
             </picture>
           </div>
@@ -408,7 +432,6 @@
         воспользуйтесь лицензией.</p>
     </div>
   </section>
-
 
 
 
@@ -443,6 +466,8 @@
     });
   </script>
   <script src="js/burger.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

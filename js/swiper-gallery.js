@@ -1,4 +1,4 @@
-let gallerySlider = new Swiper(".swiper-right--content", {
+let gallerySlider = new Swiper(".swiper-right__content", {
   slidesPerView: 3,
   slidesPerGroup: 3,
   grid: {
@@ -6,12 +6,12 @@ let gallerySlider = new Swiper(".swiper-right--content", {
   },
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-pagination--right",
+    el: ".swiper-pagination__right",
     type: "fraction"
   },
   navigation: {
-    nextEl: ".swiper-btn--next",
-    prevEl: ".swiper-btn--prev"
+    nextEl: ".swiper-btn__next",
+    prevEl: ".swiper-btn__prev"
   },
 
   breakpoints: {
