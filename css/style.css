@@ -70,7 +70,7 @@ button {
 .container {
   max-width: 1730px;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 60px;
 }
 
 .header-top {
@@ -81,8 +81,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 31px;
-  padding-bottom: 28px; */
   height: 100px;
 }
 
@@ -96,7 +94,7 @@ button {
 
 .header-logo {
   margin-right: 20px;
-  margin-left: 3px;
+  margin-left: 13px;
 }
 
 .header__nav {
@@ -109,6 +107,7 @@ button {
   width: 73%;
   display: flex;
   justify-content: space-between;
+  margin-left: 11px;
 }
 
 .nav-list__item {
@@ -513,12 +512,12 @@ button {
   display: flex;
   justify-content: space-between;
   width: 66%;
-  padding: 23px 0;
+  padding: 23px 0 23px 11px;
 }
 
 .list__item {
   position: relative;
-  padding-right: 11px;
+  padding-right: 14px;
 }
 
 .list__item-btn {
@@ -840,7 +839,7 @@ button {
 
 .hero__content {
   max-width: 597px;
-  padding-left: 3px;
+  padding-left: 14px;
   padding-bottom: 122px;
 }
 
@@ -850,7 +849,6 @@ button {
   font-size: 48px;
   line-height: 65px;
   margin-top: 80px;
-  margin-bottom: 30px;
 }
 
 .header-hero__title {
@@ -926,11 +924,13 @@ button {
 
 .about__content {
   max-width: 1080px;
-  padding-bottom: 80px;
+  padding-bottom: 69px;
+  padding-left: 13px;
 }
 
 .about__title {
   color: #333;
+  margin-bottom: 16px;
 }
 
 .about__text {
@@ -947,7 +947,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .swiper-section .swiper-box {
@@ -958,11 +958,13 @@ button {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
+  padding-left: 13px;
 }
 
 .gallery-title {
   margin-top: 0;
   color: #fff;
+  margin-bottom: 23px;
 }
 
 .swiper-left__content-text {
@@ -998,7 +1000,7 @@ button {
 
 .container__select p {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .choices__inner {
@@ -1049,6 +1051,8 @@ button {
   max-width: 1200px;
   width: 100%;
   overflow: hidden;
+  margin-top: 22px;
+  padding-bottom: 10px;
 }
 
 .swiper-right__content .swiper-wrapper__box {
@@ -1124,7 +1128,7 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .sw-btn {
@@ -1144,11 +1148,11 @@ button {
 }
 
 .swiper-btn__prev {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .swiper-pagination__right {
-  margin-right: 20px;
+  margin-right: 7px;
 }
 
 .swiper-button-lock,
