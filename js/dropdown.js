@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll(".list__item__btn").forEach(item => {
+  document.querySelectorAll(".list__item-btn").forEach(item => {
   item.addEventListener("click", function() {
     let btn = this;
     let dropdown = this.parentElement.querySelector(".dropdown-box");
     
-    document.querySelectorAll(".list__item__btn").forEach(el => {
+    document.querySelectorAll(".list__item-btn").forEach(el => {
       if (el != btn) {
         el.classList.remove("active__btn");
       }
@@ -26,7 +26,7 @@ document.addEventListener("click", function(e) {
     document.querySelectorAll(".dropdown-box").forEach(el => {
         el.classList.remove("active-list__item");
     })
-     document.querySelectorAll(".list__item__btn").forEach(el => {
+     document.querySelectorAll(".list__item-btn").forEach(el => {
         el.classList.remove("active__btn");
     });
   }

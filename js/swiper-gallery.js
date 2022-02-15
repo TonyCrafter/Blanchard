@@ -46,13 +46,4 @@ let gallerySlider = new Swiper(".swiper-right__content", {
     prevSlideMessage: 'Предыдущий',
     nextSlideMessage: 'Следующий',
   }
-
-  // on: {
-  //   /* исправляет баг с margin-top остающимся при смене брейкпоинта, это было нужно в 6-й версии свайпера */
-  //   beforeResize: function () {
-  //     this.slides.forEach((el) => {
-  //       el.style.marginTop = "";
-  //     });
-  //   }
-  // }
 });
